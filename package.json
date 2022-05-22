@@ -1,0 +1,26 @@
+{
+  "name": "timestamp-fcc",
+  "version": "1.0.0",
+  "description": "timestamp microservice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mjuli/timestamp-fcc.git"
+  },
+  "keywords": [
+    "timestamp"
+  ],
+  "author": "Julia Martins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mjuli/timestamp-fcc/issues"
+  },
+  "homepage": "https://github.com/mjuli/timestamp-fcc#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "nodemon": "^2.0.16"
+  }
+}
