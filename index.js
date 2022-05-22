@@ -13,8 +13,12 @@ app.get('/api/:date?', (req, res) => {
   const timestamp = {}
   let date = new Date()
 
-  if(req.params.date)
-    date = new Date(req.params.date)
+  if(req.params.date){
+    const dateParam = isNaN(req.params.date) ?
+      req.params.date :
+      parseInt(req.params.date)
+    date = new Date(dateParam)
+  }
 
   if(date instanceof Date && !isNaN(date.valueOf())){
     timestamp.unix = date.getTime()
